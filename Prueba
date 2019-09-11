@@ -1,0 +1,87 @@
+
+public class Prueba {
+	
+
+private String nobre_ciclo;
+private String version;
+
+
+public Prueba(String nobre_ciclo, String version) {
+	super();
+	this.nobre_ciclo = nobre_ciclo;
+	this.version = version;
+}
+
+public String getNobre_ciclo() {
+	return nobre_ciclo;
+}
+
+public void setNobre_ciclo(String nobre_ciclo) {
+	this.nobre_ciclo = nobre_ciclo;
+}
+
+public String getVersion() {
+	return version;
+}
+
+public void setVersion(String version) {
+	this.version = version;
+}
+
+public String toString (){
+    String mensaje="el ciclo del aplicativo es:"+nobre_ciclo+"la version del ciclo es:"+version;
+    return mensaje;
+}
+
+public boolean Progreso (int linea) {
+	if(linea<=100) {
+		int produc,restan;
+		
+		produc=linea;
+		restan=produc-100;
+		if(restan==0) {
+			
+			return false;	
+		}
+		if(restan!= 0) {
+			
+			return true;
+				
+		}
+			
+	}
+	
+	return false;
+	
+}
+
+public boolean Produccion (int falla) {
+	int cantidad=falla;
+	if(cantidad>0) {
+		return true;
+	}
+	else {
+		
+		return false;
+	}
+	
+}
+
+public boolean Defectos(int defecto,int fejecucion) {
+	int error,problema;
+	error=defecto;
+	problema=fejecucion;
+	Produccion(problema);
+	if(error>0) {
+		if(fejecucion>0) {
+	}
+	return true;
+	
+   }
+	
+	else {
+		return false;
+	}	
+  }
+
+}
