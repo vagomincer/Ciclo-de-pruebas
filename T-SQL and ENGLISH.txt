@@ -1,0 +1,69 @@
+¿Which of these commands is used to change a substring in a string?  
+
+a. REPLICATE 
+b. REPLACE 
+c. CHARINDEX
+d. STUFF 
+e. SUBSTRING 
+
+
+
+the command is REPLACE this is used to change a substring in a string
+
+
+
+
+The Car table is defined by this statement: 
+
+CREATE TABLE Car   ( Id bigint NOT NULL,  
+Brand varchar(50) NOT NULL,     
+Model varchar(50) NOT NULL,    
+Color varchar(15) NOT NULL,     
+CHECK (Color in('blue','red','yellow','black','green','silver')), PRIMARY KEY (Id)   ) 
+
+¿Which of these commands won’t fail? 
+
+a. INSERT INTO Car (Id, Brand, Model)  VALUES (2, 'KIA', 'Sportage') 
+b. INSERT INTO Car (Id, Brand, Color, Model) VALUES (2, 'KIA', 'purple', 'Sportage') 
+c. INSERT INTO Car (Brand, Model, Color, Id) VALUES ('KIA', 'Sportage', 'red', 1) 
+d. INSERT INTO Car (Id, Brand, Model, Color) VALUES ('2', 'KIA', 'Sportage', 'red') 
+
+
+
+the command that should not fail is INSERT INTO Car (Id, Brand, Model, Color) VALUES ('2', 'KIA', 'Sportage', 'red') 
+
+
+3. ¿What does the following statement do? 
+
+  SELECT * INTO table2 FROM table1 WHERE 1 = 2 
+
+a. Nothing. It’s useless.  
+b. Creates table2 according to table1 and copies all data from table1 to table2. 
+c. Creates table1 according to table2 and copies all data from table2 to table1. 
+d. Creates table2 according to table1 without data.  
+
+
+
+
+the statement is ambiguous, becouse table1 and table2 can´t select himself. 
+and should selct a field from some the two tables  
+
+
+4. The result of the following sentence is (0): 
+
+  SELECT 1/2 
+ 
+¿How can you modify it so that it provides the correct mathematical result? 
+
+modificating SELECT 1/2.0
+
+
+
+INGLES
+-------
+lectura----> 3 
+escritura---> 4 
+Conversacion---->3
+
+ 
+
