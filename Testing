@@ -1,0 +1,66 @@
+import static org.junit.Assert.*;
+
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+import junit.framework.Assert;
+
+public class Testing {
+	
+	static Prueba aplicativo1;
+    static Prueba aplicativo2;
+    static Prueba aplicativo3;
+    static Prueba aplicativo4;
+ 
+@BeforeClass
+public static void aplicativos() {
+	aplicativo1=new Prueba("ciclo1", "version1");
+	aplicativo2=new Prueba("ciclo1", "version1");
+	aplicativo3=new Prueba("ciclo1", "version1");
+	aplicativo4=new Prueba("ciclo1", "version1");
+}
+	@Test
+	public void produccionfalse() {
+		Assert.assertFalse(aplicativo1.Produccion(0));
+		Assert.assertFalse(aplicativo2.Produccion(0));
+		Assert.assertFalse(aplicativo3.Produccion(0));
+		Assert.assertFalse(aplicativo4.Produccion(0));
+			}
+	@Test
+	public void produccionTrue() {
+		Assert.assertTrue(aplicativo1.Produccion(1));
+		Assert.assertTrue(aplicativo2.Produccion(2));
+		Assert.assertTrue(aplicativo3.Produccion(6));
+		Assert.assertTrue(aplicativo4.Produccion(4));
+			}
+	
+	
+	public void progresofalse() {
+		Assert.assertFalse(aplicativo1.Progreso(100));
+		Assert.assertFalse(aplicativo2.Progreso(100));
+		Assert.assertFalse(aplicativo3.Progreso(100));
+		Assert.assertFalse(aplicativo4.Progreso(100));
+			}
+	@Test
+	public void progresotrue() {
+		Assert.assertTrue(aplicativo1.Progreso(0));
+		Assert.assertTrue(aplicativo2.Progreso(10));
+		Assert.assertTrue(aplicativo3.Progreso(10));
+		Assert.assertTrue(aplicativo4.Progreso(1));
+			}
+	@Test
+	public void defectosfalse() {
+		Assert.assertTrue(aplicativo1.Defectos(2, 2));
+		Assert.assertTrue(aplicativo2.Defectos(3, 4));
+		Assert.assertTrue(aplicativo3.Defectos(5, 2));
+		Assert.assertTrue(aplicativo4.Defectos(6, 4));	
+	}
+	@Test
+	public void defectosTrue() {
+		Assert.assertTrue(aplicativo1.Defectos(2, 2));
+		Assert.assertTrue(aplicativo2.Defectos(3, 4));
+		Assert.assertTrue(aplicativo3.Defectos(5, 2));
+		Assert.assertTrue(aplicativo4.Defectos(6, 4));	
+	}
+		
+}
