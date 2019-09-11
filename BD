@@ -1,0 +1,11 @@
+CREATE DATABASE prueba;
+use prueba;
+CREATE TABLE ciclos(
+  id int not null,
+  nombre_ciclo varchar(50) not null,
+  nombre_version varchar(50) not null,
+  Progreso int not null,
+  Produccio int not null,
+  Defectos int not null)
+  PRIMARY KEY (Id) 
+)
